@@ -20,7 +20,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="w-full h-full p-4 md:p-8 lg:p-16 bg-stone-400">
-          <div className="xl:max-w-[1024px] xl:mx-auto">
+          <div className="xl:max-w-[864px] xl:mx-auto">
             <ContactForm />
           </div>
         </div>

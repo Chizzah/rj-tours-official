@@ -7,9 +7,9 @@ import Button from "../UI/Button";
 
 export default function Hero() {
   return (
-    <section className="relative h-[50vh]">
+    <section className="relative h-[50vh] xl:h-[80vh]">
       <StaticImage
-        className="inline-block object-cover w-full h-[50vh] lg:h-full"
+        className="block object-cover w-full h-full"
         src="../../images/hero-home.jpg"
         alt="hero image"
       />

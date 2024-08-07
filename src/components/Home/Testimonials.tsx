@@ -15,14 +15,14 @@ export default function Testimonials() {
   });
 
   return (
-    <section className="py-8 lg:py-16">
-      <h2 className="px-8 mb-4 text-xl font-semibold uppercase text-stone-400 lg:text-3xl lg:mb-8 lg:text-center">
+    <section className="py-8 lg:py-16 bg-stone-400">
+      <h2 className="px-8 mb-4 text-xl font-semibold uppercase text-neutral-100 lg:text-3xl lg:mb-8 lg:text-center">
         Testimonials
       </h2>
       <div className="lg:mx-auto lg:w-[1240px]">
         <div ref={ref} className="keen-slider">
           <div className="keen-slider__slide">
-            <div className="flex flex-col justify-between p-8 m-4 shadow bg-stone-400 text-neutral-100 h-72 lg:w-96 lg:h-80">
+            <div className="flex flex-col justify-between p-8 m-4 shadow text-stone-400 bg-neutral-100 h-72 lg:w-96 lg:h-80">
               <p className="mb-4 text-sm">
                 Utmost professionalism! Well structured and very informative
                 tour. Such an eye opening experience, from all the sites we had
@@ -42,7 +42,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="keen-slider__slide">
-            <div className="flex flex-col justify-between p-8 m-4 shadow bg-stone-400 text-neutral-100 h-72 lg:w-96 lg:h-80">
+            <div className="flex flex-col justify-between p-8 m-4 shadow text-stone-400 bg-neutral-100 h-72 lg:w-96 lg:h-80">
               <p className="mb-4 text-sm">
                 My name is Stephan Penderis and I would just like to share my
                 experience that I had on a tour through some of the outer parts
@@ -62,7 +62,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="keen-slider__slide">
-            <div className="flex flex-col justify-between p-8 m-4 shadow bg-stone-400 text-neutral-100 h-72 lg:w-96 lg:h-80">
+            <div className="flex flex-col justify-between p-8 m-4 shadow text-stone-400 bg-neutral-100 h-72 lg:w-96 lg:h-80">
               <p className="mb-4 text-sm">
                 Utmost professionalism! Well structured and very informative
                 tour. Such an eye opening experience, from all the sites we had

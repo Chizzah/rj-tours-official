@@ -10,7 +10,7 @@ export default function BikeRentals() {
     <section className="w-full mx-auto bg-stone-400 lg:flex lg:h-[720px]">
       <div className="h-60 lg:w-8/12 lg:h-full">
         <StaticImage
-          className="inline-block object-cover w-full h-60 lg:h-full"
+          className="block object-cover w-full h-60 lg:h-full"
           src="../../images/rentals.jpg"
           alt="bike rentals"
         />

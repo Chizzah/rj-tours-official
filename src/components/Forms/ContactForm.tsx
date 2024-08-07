@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import { Script } from "gatsby";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
+import { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 
 import Button from "../UI/Button";
+import MyModal from "../UI/FormModal";
 
 const formId = process.env.PAGECLIP_API_KEY;
 
@@ -16,7 +18,17 @@ type FormValues = {
   message: string;
 };
 
+type FromSumissionTypes = {
+  message?: string;
+  isOpen?: boolean;
+};
+
 export default function ContactForm() {
+  const [formSubmission, setFormSubmission] = useState<FromSumissionTypes>({
+    message: "",
+    isOpen: false,
+  });
+
   const {
     register,
     handleSubmit,
@@ -55,9 +67,15 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
+        console.log(response);
+        setFormSubmission({
+          isOpen: true,
+          message: "Thank you for reaching out. We'll be in contact soon.",
+        });
         reset();
       } else {
         console.error("Error submitting form:", response.statusText);
+        setFormSubmission({ isOpen: true, message: response.statusText });
       }
     } catch (error: any) {
       console.error("Error submitting form:", error.message);
@@ -71,11 +89,11 @@ export default function ContactForm() {
       </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-1 lg:grid lg:grid-cols-2"
+        className="flex flex-col gap-2 lg:flex-row lg:flex-wrap"
       >
-        <>
+        <div className="flex flex-col gap-1">
           <input
-            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-full"
+            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-[412px]"
             type="text"
             placeholder="Name"
             {...register("name", { required: "This is a required field." })}
@@ -87,10 +105,10 @@ export default function ContactForm() {
               <p className="text-xs font-thin text-red-600">{message}</p>
             )}
           />
-        </>
-        <>
+        </div>
+        <div className="flex flex-col gap-1">
           <input
-            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-full"
+            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-[412px]"
             type="text"
             placeholder="Email"
             {...register("email", {
@@ -105,10 +123,10 @@ export default function ContactForm() {
               <p className="text-xs font-thin text-red-600">{message}</p>
             )}
           />
-        </>
-        <>
+        </div>
+        <div className="flex flex-col gap-1">
           <input
-            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400"
+            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-[412px]"
             type="tel"
             placeholder="Number"
             {...register("number", { required: "This is a required field." })}
@@ -120,10 +138,10 @@ export default function ContactForm() {
               <p className="text-xs font-thin text-red-600">{message}</p>
             )}
           />
-        </>
-        <>
+        </div>
+        <div className="flex flex-col gap-1">
           <select
-            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400"
+            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:w-[412px]"
             {...register("reason", { required: "This is a required field." })}
           >
             <option value="" disabled>
@@ -141,11 +159,11 @@ export default function ContactForm() {
               <p className="text-xs font-thin text-red-600">{message}</p>
             )}
           />
-        </>
-        <>
+        </div>
+        <div className="flex flex-col w-full gap-1">
           <textarea
             rows={8}
-            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:col-span-3"
+            className="bg-white text-stone-400 focus:ring-stone-400 focus:border-stone-400 border-stone-200 placeholder:text-stone-400 lg:col-span-3 lg:w-full"
             placeholder="Message"
             {...register("message", {
               required: "This is a required field.",
@@ -158,8 +176,10 @@ export default function ContactForm() {
               <p className="text-xs font-thin text-red-600">{message}</p>
             )}
           />
-        </>
-        <Button type="submit" text="Send Message" />
+        </div>
+        <div className="w-full">
+          <Button type="submit" text="Send Message" />
+        </div>
       </form>
       {/* <TailSpin
           visible={isSubmitting}
@@ -173,6 +193,10 @@ export default function ContactForm() {
         /> */}
       {/* add react confetti */}
       <Script src="https://s.pageclip.co/v1/pageclip.js" />
+      <MyModal
+        formSubmission={formSubmission}
+        setFormSubmission={setFormSubmission}
+      />
     </div>
   );
 }

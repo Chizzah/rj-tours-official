@@ -8,9 +8,9 @@ import { navigate } from "gatsby";
 export default function BikeToursAndRentals() {
   return (
     <Layout>
-      <section className="relative lg:h-[600px]">
+      <section className="relative h-[50vh] xl:h-[80vh]">
         <StaticImage
-          className="inline-block object-cover w-full h-80 lg:h-full"
+          className="block object-cover w-full h-full"
           src="../images/rentals.jpg"
           alt="hero image"
         />
@@ -19,37 +19,87 @@ export default function BikeToursAndRentals() {
           <Heading text="Bikes & Rentals" />
         </div>
       </section>
-      <section className="p-8 bg-neutral-100 text-stone-400 lg:py-16">
-        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4">
+      <section className="p-8 bg-neutral-100 text-stone-400">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading
             mode="secondary"
             as="h2"
-            text="Explore the Jewel of the Little Karoo on Bike"
+            text="Explore the Jewel of the Klein Karoo with RJ Tours on a Heritage Walk"
           />
           <p className="text-md lg:text-lg">
-            Are you ready to embark on an unforgettable adventure through the
+            Are you ready to emdark on an unforgettable adventure through the
             enchanting landscapes of Oudtshoorn? Join RJ Tours as we journey
-            through this picturesque town nestled in the heart of the Little
+            through this picturesque town nestled in the heart of the Klein
             Karoo, a region renowned for its natural beauty and rich cultural
             heritage. Immerse yourself in the stunning scenery, where rolling
-            hills and expansive plains create a breathtaking backdrop.
-          </p>
-          <p className="text-md lg:text-lg">
-            Our tour will take you through the heart of Oudtshoorn, where you
-            can marvel at the historic buildings made from locally sourced
-            sandstone, dating back to 1860. These architectural gems are a
-            testament to the town's enduring legacy and craftsmanship.
+            hills expansive plains create a breathtaking backdrop.
           </p>
         </div>
       </section>
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
+          <Heading
+            mode="secondary"
+            as="h2"
+            text="Why Choose RJ Tours Biking in Oudtshoorn?"
+          />
+          <Heading mode="secondary" as="h5" text="Eco-friendly Travel:" />
+          <p className="text-md lg:text-lg">
+            Embrace sustainable tourism by opting the fresh air and scenic
+            views.
+          </p>
+          <Heading
+            mode="secondary"
+            as="h5"
+            text="Convenience and Flexibility:"
+          />
+          <p className="text-md lg:text-lg">
+            Renting a bike allows you to explore at your own pace, stopping
+            whenever you wish to take in the sights or snap a memorable photo.
+          </p>
+          <Heading mode="secondary" as="h5" text="Health Benefits:" />
+          <p className="text-md lg:text-lg">
+            Biking is a great way to stay active, offering a healthy and fun way
+            to explore the town and its surroundings.
+          </p>
+          <Heading mode="secondary" as="h5" text="Local Expertise:" />
+          <p className="text-md lg:text-lg">
+            With deep roots in the community, our guides offer authentic stories
+            and local knowledge that you won't find in guidebooks.
+          </p>
+        </div>
+      </section>
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
+          <Heading
+            mode="secondary"
+            as="h2"
+            text="What's Included in Your Bike Rental"
+          />
+          <p className="text-md lg:text-lg">
+            Explore Oudtshoorn with our local insights map, designed to help you
+            navigate the town and uncover its hidden gems. Whether you're
+            interested in historical sites, local eateries, or
+            off-the-beaten-path attractions, our map provides a valuable guide
+            to enhance your experience.
+          </p>
+          <p className="text-md lg:text-lg">
+            Additionally, we offer rental bikes suitable for solo travelers,
+            couples, families, and groups, ensuring that everyone can join in on
+            the adventure. With options tailored to different needs and group
+            sizes, our bike rentals make it easy and enjoyable to explore
+            Oudtshoorn at your own pace.
+          </p>
+        </div>
+      </section>
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="Pricing" />
           <div className="flex flex-col gap-4">
             <div>
               <Heading
                 mode="secondary"
-                as="h3"
+                as="h5"
                 text="City Bike Rental (6 max):"
               />
               <p className="text-md lg:text-lg">
@@ -71,7 +121,7 @@ export default function BikeToursAndRentals() {
             <div>
               <Heading
                 mode="secondary"
-                as="h3"
+                as="h5"
                 text="Heritage Bike Tour (5 max):"
               />
               <p className="text-md lg:text-lg">
@@ -85,12 +135,12 @@ export default function BikeToursAndRentals() {
         </div>
       </section>
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="Time Slots" />
           <div>
             <Heading
               mode="secondary"
-              as="h3"
+              as="h5"
               text="Summer Time Slots (1 Septemper - 30 April)"
             />
             <ul className="list-disc">
@@ -105,7 +155,7 @@ export default function BikeToursAndRentals() {
           <div>
             <Heading
               mode="secondary"
-              as="h3"
+              as="h5"
               text="Winter Time Slots (1 May - 31 August)"
             />
             <ul className="list-disc">
@@ -120,7 +170,7 @@ export default function BikeToursAndRentals() {
         </div>
       </section>
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="Riding Rules" />
           <ul className="list-disc">
             <li className="text-md lg:text-lg">Give way to pedestrians</li>
@@ -145,7 +195,7 @@ export default function BikeToursAndRentals() {
         </div>
       </section>
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="Specials" />
           <ul className="list-disc">
             <li className="text-md lg:text-lg">
@@ -164,13 +214,21 @@ export default function BikeToursAndRentals() {
           </ul>
         </div>
       </section>
-      <section className="flex items-center justify-center w-full py-8 bg-stone-400 lg:py-16">
-        <button
-          className="px-8 py-2 text-xl font-semibold uppercase lg:py-4 lg:px-16 bg-neutral-100 text-stone-400 lg:text-2xl"
-          onClick={() => navigate("/contact/?reason=bike-tour-or-rental")}
-        >
-          Book a Bike Tour
-        </button>
+      <section className="flex flex-col items-center justify-center w-full p-8 bg-stone-400 lg:py-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
+          <Heading as="h2" text="Book Your Tour Today" />
+          <p className="text-md lg:text-lg text-neutral-100">
+            Embark on a journey that goes beyond sightseeing. Experience the
+            essence of Oudtshoorn through our community tours, where history,
+            culture and sustainability converge.
+          </p>
+          <button
+            className="w-full px-8 py-2 text-sm font-semibold uppercase lg:py-4 lg:px-16 bg-neutral-100 text-stone-400 lg:text-lg lg:w-96"
+            onClick={() => navigate("/contact/?reason=bike-tour-or-rental")}
+          >
+            Book a Heritage Bike Tour
+          </button>
+        </div>
       </section>
     </Layout>
   );

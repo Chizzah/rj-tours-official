@@ -10,7 +10,7 @@ export default function HeritageWalks() {
     <section className="w-full mx-auto bg-neutral-100 lg:flex lg:h-[720px]">
       <div className="h-60 lg:w-8/12 lg:order-2 lg:h-full">
         <StaticImage
-          className="inline-block object-cover w-full h-60 lg:h-full"
+          className="block object-cover w-full h-60 lg:h-full"
           src="../../images/heritage-walks-home.jpg"
           alt="heritage walks"
         />
