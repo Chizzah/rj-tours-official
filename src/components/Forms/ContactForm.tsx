@@ -8,7 +8,7 @@ import { TailSpin } from "react-loader-spinner";
 import Button from "../UI/Button";
 import MyModal from "../UI/FormModal";
 
-const formId = process.env.PAGECLIP_API_KEY;
+const formId = process.env.GATSBY_PAGECLIP_API_KEY;
 
 type FormValues = {
   name: string;
