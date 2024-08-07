@@ -14,12 +14,6 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    {
-      resolve: `gatsby-source-custom`,
-      options: {
-        apiKey: process.env.GATSBY_PAGECLIP_API_KEY,
-      },
-    },
     "gatsby-plugin-postcss",
     // "gatsby-plugin-google-gtag", 
     "gatsby-plugin-image", "gatsby-plugin-sitemap", {
