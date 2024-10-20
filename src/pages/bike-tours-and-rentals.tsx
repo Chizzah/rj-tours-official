@@ -117,6 +117,15 @@ export default function BikeToursAndRentals() {
               <p className="text-md lg:text-lg">
                 <b>Full day (8 hours):</b> R290-00
               </p>
+              <p className="text-md lg:text-lg">
+                <b>Full day (8 hours):</b> R290-00
+              </p>
+              <p className="text-md lg:text-lg">
+                <b>2-3 days:</b> R246-50 per day
+              </p>
+              <p className="text-md lg:text-lg">
+                <b>4-6 days:</b> R217-50 per day
+              </p>
             </div>
             <div>
               <Heading
@@ -125,10 +134,16 @@ export default function BikeToursAndRentals() {
                 text="Heritage Bike Tour (5 max):"
               />
               <p className="text-md lg:text-lg">
-                <b>Two hours:</b> R190-00
+                <b>Two hours (Adult):</b> R210-00
               </p>
               <p className="text-md lg:text-lg">
-                <b>Three hours:</b> R260-00
+                <b>Three hours (Child 4 - 12):</b> R145-00
+              </p>
+              <p className="text-md lg:text-lg">
+                <b>Two hours (Adult):</b> R280-00
+              </p>
+              <p className="text-md lg:text-lg">
+                <b>Three hours (Child 4 - 12):</b> R170-00
               </p>
             </div>
           </div>
@@ -148,7 +163,19 @@ export default function BikeToursAndRentals() {
                 <b>Rental Bikes:</b> 07:00-19:00
               </li>
               <li className="text-md lg:text-lg">
-                <b>Heritage Bike Tours:</b> 07:00-19:00
+                <b>Heritage Bike Tours:</b> (1) 07:30 - 09:30
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (2) 10:00 -
+                12:00
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (3)
+                14:00-16:00
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (4)
+                16:30-18:30
               </li>
             </ul>
           </div>
@@ -163,7 +190,19 @@ export default function BikeToursAndRentals() {
                 <b>Rental Bikes:</b> 08:00-17:00
               </li>
               <li className="text-md lg:text-lg">
-                <b>Heritage Bike Tours:</b> 08:00-17:00
+                <b>Heritage Bike Tours:</b> (1) 08:00 - 10:00
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (2) 10:30 -
+                12:30
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (3)
+                13:00-15:00
+              </li>
+              <li className="text-md lg:text-lg">
+                <b className="invisible">Heritage Bike Tours:</b> (4)
+                15:30-17:30
               </li>
             </ul>
           </div>
@@ -200,17 +239,91 @@ export default function BikeToursAndRentals() {
           <ul className="list-disc">
             <li className="text-md lg:text-lg">
               <b>Birthday special:</b> Two hours heritage bike tour and 10%
-              discount for the poeple who join the birthday person (Proof of
+              discount for the people who join the birthday person (Proof of
               birth date required)
             </li>
             <li className="text-md lg:text-lg">
-              <b>Pensioners special:</b> 15% discon on all rental rides as well
-              as heritage tour
+              <b>Pensioners special:</b> 15% discount on all rental rides as
+              well as heritage tour
             </li>
             <li className="text-md lg:text-lg">
               <b>Group pack (3):</b> 10% discount
             </li>
             <li className="text-md lg:text-lg">Ask about other specials</li>
+          </ul>
+        </div>
+      </section>
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
+          <Heading mode="secondary" as="h2" text="Cancellation Policy" />
+          <p>
+            The date of cancellation shall be deemed to be the date on which the
+            written notification is received. If a booking is cancelled.{" "}
+          </p>
+          <ul className="list-disc">
+            <li className="text-md lg:text-lg">
+              When making the booking 100% must be paid.
+            </li>
+            <li className="text-md lg:text-lg">
+              21 days or more prior to departure, non-refundable deposit will be
+              forfeited.
+            </li>
+            <li className="text-md lg:text-lg">
+              14 days prior to departure, 50% of the tour cost will be
+              forfeited.{" "}
+            </li>
+            <li className="text-md lg:text-lg">
+              7 days prior to departure, 80% of the tour cost will be forfeited.{" "}
+            </li>
+            <li className="text-md lg:text-lg">
+              NO SHOW- 100% of tour cost will be forfeited.
+            </li>
+          </ul>
+          <ul className="list-disc">
+            <li className="text-md lg:text-lg">
+              All RJ TOURS Activities are child friendly
+            </li>
+            <li className="text-md lg:text-lg">
+              No fees for a Child under the age of 4 (ACTIVITY)
+            </li>
+            <li className="text-md lg:text-lg">
+              Child from the age of 4 -12 pays for (ACTIVITY)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
+          <Heading mode="secondary" as="h2" text="Child Policy" />
+          <ul className="list-disc">
+            <li className="text-md lg:text-lg">
+              When making the booking 100% must be paid.
+            </li>
+            <li className="text-md lg:text-lg">
+              21 days or more prior to departure, non-refundable deposit will be
+              forfeited.
+            </li>
+            <li className="text-md lg:text-lg">
+              14 days prior to departure, 50% of the tour cost will be
+              forfeited.{" "}
+            </li>
+            <li className="text-md lg:text-lg">
+              7 days prior to departure, 80% of the tour cost will be forfeited.{" "}
+            </li>
+            <li className="text-md lg:text-lg">
+              NO SHOW- 100% of tour cost will be forfeited.
+            </li>
+          </ul>
+          <ul className="list-disc">
+            <li className="text-md lg:text-lg">
+              All RJ TOURS Activities are child friendly
+            </li>
+            <li className="text-md lg:text-lg">
+              No fees for a Child under the age of 4 (ACTIVITY)
+            </li>
+            <li className="text-md lg:text-lg">
+              Child from the age of 4 -12 pays for (ACTIVITY)
+            </li>
           </ul>
         </div>
       </section>

@@ -24,7 +24,7 @@ export default function Hero() {
           Immerse yourself in the charm of the Klein Karoo town with our
           community tours, heritage walks, and exciting bike adventures.
         </p>
-        <Link to="/booking/">
+        <Link to="/contact/">
           <Button text="discover oudtshoorn" />
         </Link>
       </div>

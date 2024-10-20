@@ -64,20 +64,21 @@ export default function Testimonials() {
           <div className="keen-slider__slide">
             <div className="flex flex-col justify-between p-8 m-4 shadow text-stone-400 bg-neutral-100 h-72 lg:w-96 lg:h-80">
               <p className="mb-4 text-sm">
-                Utmost professionalism! Well structured and very informative
-                tour. Such an eye opening experience, from all the sites we had
-                visited to the moment our tour had ended. Never in my life I
-                would have thought that the different communities in the
-                townships of Oudtshoorn were and still are experiencing these
-                heartbreaking circumstances.
+                Looking back at our time in oudtshoorn we really enjoyed bike
+                tour Learning about the city’s history and exploring the town
+                was very interesting. Especially seeing everything through the
+                lens of a local. Our tour guide Roydin had a lot of knowledge
+                about the towns history and answered all of our questions and
+                told us many fun facts. All the best and thanks you again for
+                the amazing tour!
               </p>
               <div className="flex items-center gap-2 rounded-full">
                 <StaticImage
                   className="rounded-full"
-                  src="../../images/matthew-testimonial.jpg"
-                  alt="Matthew Stalmeester"
+                  src="../../images/henna-testimonial.jpg"
+                  alt="Henna Graf"
                 />
-                <h3 className="font-semibold uppercase">Matthew Stalmeester</h3>
+                <h3 className="font-semibold uppercase">Henna Graf</h3>
               </div>
             </div>
           </div>
