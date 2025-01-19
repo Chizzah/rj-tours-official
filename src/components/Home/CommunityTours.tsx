@@ -18,17 +18,15 @@ export default function CommunityTours() {
       <div className="p-8 text-neutral-100 lg:w-4/12 lg:p-16">
         <Heading as="h2" text="Community Tours" />
         <p className="mt-4 mb-4 lg:mb-8 lg:text-xl">
-          Embark on a captivating bike tour through Oudtshoorn's rich history.
-          Pedal past landmarks like St Jude's Church, the Synagogue Complex, and
-          Ostrich Feather Palaces, delving into the town's cultural diversity
-          and ties to the ostrich feather industry.
+          A local, socially responsible tour designed to immense guests in the
+          authentic culture and warmth of the local community. Guests can engage
+          with residents, fostering meaningful connections beyond typical
+          tourist experiences.
         </p>
         <p className="mb-8 lg:mb-16 lg:text-xl">
-          Visit Arbeidsgenot and cross the suspension bridge for panoramic
-          views. Marvel at sandstone buildings from the late 1800s, adding
-          timeless charm to Oudtshoorn. Join us for a two-wheeled adventure
-          where history, culture, and natural beauty converge in this Klein
-          Karoo gem. Start your exploration today!
+          The tour emphasizes sustainability and community involvement, ensuring
+          that guests not only learn but actively contribute to the area’s
+          social fabric and well-being.
         </p>
         <Link to="/community-tours/">
           <Button mode="secondary" text="Discover Community" />

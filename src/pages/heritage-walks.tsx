@@ -1,13 +1,16 @@
 import React from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Heading from "../components/UI/Heading";
-import { navigate } from "gatsby";
+import AdditionalInformation from "../components/AdditionalInformation";
+import CTA from "../components/CTA";
 
 export default function HeritageWalks() {
   return (
     <Layout>
+      {/* HERO */}
       <section className="relative h-[50vh] xl:h-[80vh]">
         <StaticImage
           className="block object-cover w-full h-full"
@@ -19,6 +22,9 @@ export default function HeritageWalks() {
           <Heading text="Heritage Walks" />
         </div>
       </section>
+      {/* HERO */}
+
+      {/* INTRO */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:py-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading
@@ -43,6 +49,9 @@ export default function HeritageWalks() {
           </p>
         </div>
       </section>
+      {/* INTRO */}
+
+      {/* HIGHLIGHTS */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading
@@ -71,6 +80,9 @@ export default function HeritageWalks() {
           </p>
         </div>
       </section>
+      {/* HIGHLIGHTS */}
+
+      {/* FEATURES */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="Tour Features" />
@@ -87,6 +99,9 @@ export default function HeritageWalks() {
           </p>
         </div>
       </section>
+      {/* FEATURES */}
+
+      {/* WHY CHOOSE */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="flex flex-col gap-8 max-w-[768px] lg:max-w-[1024px] mx-auto">
           <Heading
@@ -119,84 +134,106 @@ export default function HeritageWalks() {
           </section>
         </div>
       </section>
+      {/* WHY CHOOSE */}
+
+      {/* PRICING */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
-          <Heading mode="secondary" as="h2" text="Pricing & Cancellation" />
-          <div className="flex flex-col gap-4">
-            <Heading mode="secondary" as="h5" text="Pricing" />
-            <p className="text-md lg:text-lg">
-              <b>Per person:</b> R150-00
-            </p>
-            <p className="text-md lg:text-lg">
-              <b>Groups (7 or more):</b> 10% discount
-            </p>
+        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4 lg:gap-8">
+          <Heading as="h2" mode="secondary" text="Pricing" />
+          <div className="flex justify-between border-2 lg:flex-col lg:border-r-0 bg-slate-50">
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full">
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+                <p className="text-md lg:text-xl">STANDARD</p>
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+                <p className="text-md lg:text-xl">GROUP (7+)</p>
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 lg:w-4/12 lg:border-b-2">
+                <p className="text-md lg:text-xl">PRIVATE TOURS</p>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R579" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R319" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R749" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2 lg:flex-row lg:w-full">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R339" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R249" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R459" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <Heading mode="secondary" as="h5" text="Cancellation" />
-            <p className="text-md lg:text-lg">
-              The date of cancellation shall be deemed to be the date on which
-              the written notification is received. If a booking is cancelled.
-            </p>
+        </div>
+      </section>
+      {/* PRICING */}
+
+      {/* TIMESLOTS */}
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4 lg:gap-8">
+          <Heading mode="secondary" as="h2" text="TIMESLOTS" />
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <Heading
+              as="h4"
+              mode="secondary"
+              text="September - April (Summer)"
+            />
             <ul className="list-disc">
-              <li className="text-md lg:text-lg">
-                When making the booking 100% must be paid.
-              </li>
-              <li className="text-md lg:text-lg">
-                21 days or more prior to departure, non-refundable deposit will
-                be forfeited.
-              </li>
-              <li className="text-md lg:text-lg">
-                14 days prior to departure, 50% of the tour cost will be
-                forfeited.
-              </li>
-              <li className="text-md lg:text-lg">
-                7 days prior to departure, 80% of the tour cost will be
-                forfeited.
-              </li>
-              <li className="text-md lg:text-lg">
-                NO SHOW- 100% of tour cost will be forfeited.{" "}
-              </li>
+              <li className="text-md lg:text-lg">(1) 07:30 – 09:30</li>
+              <li className="text-md lg:text-lg">(2) 10:00 – 12:00</li>
+              <li className="text-md lg:text-lg">(3) 14:00 – 16:00</li>
+              <li className="text-md lg:text-lg">(4) 16:30 – 18:30</li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <Heading as="h4" mode="secondary" text="May - August (Winter)" />
+            <ul className="list-disc">
+              <li className="text-md lg:text-lg">(1) 08:00 – 10:00</li>
+              <li className="text-md lg:text-lg">(2) 10:30 – 12:30</li>
+              <li className="text-md lg:text-lg">(3) 13:00 – 15:00</li>
+              <li className="text-md lg:text-lg">(4) 15:30 – 17:30</li>
             </ul>
           </div>
         </div>
       </section>
-      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
-          <Heading mode="secondary" as="h2" text="Time Slots" />
-          <div>
-            <Heading
-              mode="secondary"
-              as="h5"
-              text="Summer Time Slots (1 Septemper - 30 April)"
-            />
-            <p className="text-md lg:text-lg">07:00-19:00</p>
-          </div>
-          <div>
-            <Heading
-              mode="secondary"
-              as="h5"
-              text="Winter Time Slots (1 May - 31 August)"
-            />
-            <p className="text-md lg:text-lg">08:00-17:00</p>
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col items-center justify-center w-full p-8 bg-stone-400 lg:py-16">
-        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
-          <Heading as="h2" text="Book Your Tour Today" />
-          <p className="text-md lg:text-lg text-neutral-100">
-            Embark on a journey that goes beyond sightseeing. Experience the
-            essence of Oudtshoorn through our community tours, where history,
-            culture and sustainability converge.
-          </p>
-          <button
-            className="w-full px-8 py-2 text-sm font-semibold uppercase lg:py-4 lg:px-16 bg-neutral-100 text-stone-400 lg:text-lg lg:w-96"
-            onClick={() => navigate("/contact/?reason=heritage-walk")}
-          >
-            Book a Heritage Walk
-          </button>
-        </div>
-      </section>
+      {/* TIMESLOTS */}
+
+      {/* ADDITIONAL INFORMATION */}
+      <AdditionalInformation />
+      {/* ADDITIONAL INFORMATION */}
+
+      {/* CTA */}
+      <CTA link="/contact/?reason=heritage-walk" text="Book a Heritage Walk" />
+      {/* CTA */}
     </Layout>
   );
 }

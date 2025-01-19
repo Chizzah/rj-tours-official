@@ -1,13 +1,16 @@
 import React from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Heading from "../components/UI/Heading";
-import { navigate } from "gatsby";
+import AdditionalInformation from "../components/AdditionalInformation";
+import CTA from "../components/CTA";
 
 export default function CommunityTours() {
   return (
     <Layout>
+      {/* HERO */}
       <section className="relative h-[50vh] xl:h-[80vh]">
         <StaticImage
           className="block object-cover w-full h-full"
@@ -19,6 +22,9 @@ export default function CommunityTours() {
           <Heading text="Community Tours" />
         </div>
       </section>
+      {/* HERO */}
+
+      {/* INTRO */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:py-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading
@@ -75,6 +81,9 @@ export default function CommunityTours() {
           </p>
         </div>
       </section>
+      {/* INTRO */}
+
+      {/* HIGHLIGHTS */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="flex flex-col gap-8 max-w-[768px] lg:max-w-[1024px] mx-auto">
           <Heading mode="secondary" as="h2" text="Tour Highlights" />
@@ -105,6 +114,9 @@ export default function CommunityTours() {
           </section>
         </div>
       </section>
+      {/* HIGHLIGHTS */}
+
+      {/* WHAT TO EXPECT */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading mode="secondary" as="h2" text="What to Expect" />
@@ -131,6 +143,9 @@ export default function CommunityTours() {
           </p>
         </div>
       </section>
+      {/* WHAT TO EXPECT */}
+
+      {/* WHY CHOOSE */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
           <Heading
@@ -155,89 +170,80 @@ export default function CommunityTours() {
           </p>
         </div>
       </section>
+      {/* WHY CHOOSE */}
+
+      {/* PRICING */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
-        <div className="max-w-[768px] lg:max-w-[864px] mx-auto">
-          <Heading as="h2" text="Times & Pricing" mode="secondary" />
-          <div className="mb-8">
-            <Heading as="h5" text="Monday to Friday Tours" mode="secondary" />
-            <div className="mt-8">
-              <p className="mb-2 text-sm md:mb-4">
-                <i>
-                  2 hours and 30 minutes of wonderful and exciting experiences.
-                </i>
-              </p>
-              <p className="mb-2 md:mb-4 lg:w-1/2">
-                <strong>REQUIREMENTS:</strong> Comfortable clothes, sneakers or
-                closed shoes, a hat, sunblock, rain coat if its cold….and don’t
-                forget your camera to capture the iconic memorable moments.
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Summer:</strong> September - April
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Summer Times Slots:</strong> 08:00 - 10:30 & 11:00 -
-                13:30
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Winter:</strong> May - August
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Winter Time Slots:</strong> 09:00 - 11:30 & 12:00 -
-                14:30
-              </p>
+        <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4 lg:gap-8">
+          <Heading as="h2" mode="secondary" text="Pricing" />
+          <div className="flex justify-between border-2 lg:flex-col lg:border-r-0 bg-slate-50">
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full">
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+                <p className="text-md lg:text-xl">ADULT</p>
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+                <p className="text-md lg:text-xl">CHILD (4-12)</p>
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 lg:w-4/12 lg:border-b-2">
+                <p className="text-md lg:text-xl">GROUP (7+)</p>
+              </div>
             </div>
-          </div>
-          <div className="mb-8">
-            <Heading as="h5" text="Saturday Tours" mode="secondary" />
-            <div className="mt-8">
-              <p className="mb-2 text-sm md:mb-4">
-                <i>Only 1 hour and 30 minutes</i>
-              </p>
-              <p className="mb-2 md:mb-4">
-                Suikerbult & Recycling @ less 15% discount
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Time Slot One:</strong> 09:00 - 10:30
-              </p>
-              <p className="mb-2 md:mb-4">
-                <strong>Time Slot Two:</strong> 11:00 – 12:30
-              </p>
-            </div>
-          </div>
-          <div>
-            <Heading as="h5" text="Transportation" mode="secondary" />
-            <div className="mt-8">
-              <p className="mb-2 md:mb-4">
-                @R120 per person (under 4 years complimentary)
-              </p>
-              <p className="mb-2 md:mb-4">
-                Pick up and drop available on 30 minutes prior tour departure
-                times
-              </p>
-              <p className="mb-2 md:mb-4">
-                Arrival of 15min required prior departure to complete necessary
-                documents.
-              </p>
+            <div className="flex flex-col w-1/2 lg:flex-row lg:w-full">
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h3" mode="secondary" text="R199-00" />
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h3" mode="secondary" text="R149-00" />
+              </div>
+              <div className="flex items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h3" mode="secondary" text="10% DISCOUNT" />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center w-full p-8 bg-stone-400 lg:py-16">
-        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4">
-          <Heading as="h2" text="Book Your Tour Today" />
-          <p className="text-md lg:text-lg text-neutral-100">
-            Embark on a journey that goes beyond sightseeing. Experience the
-            essence of Oudtshoorn through our community tours, where history,
-            culture and sustainability converge.
-          </p>
-          <button
-            className="w-full px-8 py-2 text-sm font-semibold uppercase lg:py-4 lg:px-16 bg-neutral-100 text-stone-400 lg:text-lg lg:w-96"
-            onClick={() => navigate("/contact/?reason=community-tour")}
-          >
-            Book a Community Tour
-          </button>
+      {/* PRICING */}
+
+      {/* TIMESLOTS */}
+      <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
+        <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4 lg:gap-8">
+          <Heading mode="secondary" as="h2" text="TIMESLOTS" />
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <Heading
+              as="h4"
+              mode="secondary"
+              text="September - April (Summer)"
+            />
+            <ul className="list-disc">
+              <li className="text-md lg:text-lg">(1) 07:30 – 09:30</li>
+              <li className="text-md lg:text-lg">(2) 10:00 – 12:00</li>
+              <li className="text-md lg:text-lg">(3) 14:00 – 16:00</li>
+              <li className="text-md lg:text-lg">(4) 16:30 – 18:30</li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <Heading as="h4" mode="secondary" text="May - August (Winter)" />
+            <ul className="list-disc">
+              <li className="text-md lg:text-lg">(1) 08:00 – 10:00</li>
+              <li className="text-md lg:text-lg">(2) 10:30 – 12:30</li>
+              <li className="text-md lg:text-lg">(3) 13:00 – 15:00</li>
+              <li className="text-md lg:text-lg">(4) 15:30 – 17:30</li>
+            </ul>
+          </div>
         </div>
       </section>
+      {/* TIMESLOTS */}
+
+      {/* ADDITIONAL INFORMATION */}
+      <AdditionalInformation />
+      {/* ADDITIONAL INFORMATION */}
+
+      {/* CTA */}
+      <CTA
+        link="/contact/?reason=community-tour"
+        text="Book a Community Tour"
+      />
+      {/* CTA */}
     </Layout>
   );
 }
