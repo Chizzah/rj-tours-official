@@ -179,24 +179,53 @@ export default function CommunityTours() {
           <div className="flex justify-between border-2 lg:flex-col lg:border-r-0 bg-slate-50">
             <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full">
               <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
-                <p className="text-md lg:text-xl">ADULT</p>
+                <p className="text-md lg:text-xl">STANDARD</p>
               </div>
               <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
-                <p className="text-md lg:text-xl">CHILD (4-12)</p>
+                <p className="text-md lg:text-xl">GROUP (7+)</p>
               </div>
               <div className="flex items-center justify-center h-20 px-2 lg:w-4/12 lg:border-b-2">
-                <p className="text-md lg:text-xl">GROUP (7+)</p>
+                <p className="text-md lg:text-xl">PRIVATE TOURS</p>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R579" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R319" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R749" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER ADULT
+                </p>
               </div>
             </div>
             <div className="flex flex-col w-1/2 lg:flex-row lg:w-full">
-              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h3" mode="secondary" text="R199-00" />
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R339" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
               </div>
-              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h3" mode="secondary" text="R149-00" />
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R249" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
               </div>
-              <div className="flex items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
-                <Heading as="h3" mode="secondary" text="10% DISCOUNT" />
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R459" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  PER CHILD (4-7)
+                </p>
               </div>
             </div>
           </div>

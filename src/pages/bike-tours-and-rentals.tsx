@@ -178,11 +178,7 @@ export default function BikeToursAndRentals() {
       {/* TIMESLOTS */}
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4 lg:gap-8">
-          <Heading
-            mode="secondary"
-            as="h2"
-            text="TIMESLOTS (2H/3H START TIMES)"
-          />
+          <Heading mode="secondary" as="h2" text="TIMESLOTS (2H/3H Tours)" />
           <div className="flex flex-col gap-4 lg:gap-8">
             <Heading
               as="h4"
@@ -190,19 +186,31 @@ export default function BikeToursAndRentals() {
               text="September - April (Summer)"
             />
             <ul className="list-disc">
-              <li className="text-md lg:text-lg">(1) 07:30</li>
-              <li className="text-md lg:text-lg">(2) 10:00/11:00</li>
-              <li className="text-md lg:text-lg">(3) 14:00/14:30</li>
-              <li className="text-md lg:text-lg">(4) 16:30</li>
+              <li className="text-md lg:text-lg">
+                (1) 07:30 - 09:30 / 07:30 - 10:30
+              </li>
+              <li className="text-md lg:text-lg">
+                (2) 10:00 - 12:00 / 11:00 - 14:00
+              </li>
+              <li className="text-md lg:text-lg">
+                (3) 14:00 - 16:00 / 14:30 - 17:30
+              </li>
+              <li className="text-md lg:text-lg">(4) 16:30 - 18:30</li>
             </ul>
           </div>
           <div className="flex flex-col gap-4 lg:gap-8">
             <Heading as="h4" mode="secondary" text="May - August (Winter)" />
             <ul className="list-disc">
-              <li className="text-md lg:text-lg">(1) 08:00</li>
-              <li className="text-md lg:text-lg">(2) 10:30/11:30</li>
-              <li className="text-md lg:text-lg">(3) 13:00/15:00</li>
-              <li className="text-md lg:text-lg">(4) 15:30</li>
+              <li className="text-md lg:text-lg">
+                (1) 08:00 - 10:00 / 08:00 - 11:00
+              </li>
+              <li className="text-md lg:text-lg">
+                (2) 10:30 - 12:30 / 11:30 - 14:30
+              </li>
+              <li className="text-md lg:text-lg">
+                (3) 13:00 - 15:00 / 15:00 - 18:00
+              </li>
+              <li className="text-md lg:text-lg">(4) 15:30 - 17:30</li>
             </ul>
           </div>
         </div>
