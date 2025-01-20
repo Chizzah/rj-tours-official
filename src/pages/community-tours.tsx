@@ -190,19 +190,19 @@ export default function CommunityTours() {
             </div>
             <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R579" />
+                <Heading as="h2" mode="secondary" text="R570" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER ADULT
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R319" />
+                <Heading as="h2" mode="secondary" text="R315" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER ADULT
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R749" />
+                <Heading as="h2" mode="secondary" text="R740" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER ADULT
                 </p>
@@ -210,25 +210,29 @@ export default function CommunityTours() {
             </div>
             <div className="flex flex-col w-1/2 lg:flex-row lg:w-full">
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R339" />
+                <Heading as="h2" mode="secondary" text="R330" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER CHILD (4-7)
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R249" />
+                <Heading as="h2" mode="secondary" text="R240" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER CHILD (4-7)
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R459" />
+                <Heading as="h2" mode="secondary" text="R450" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   PER CHILD (4-7)
                 </p>
               </div>
             </div>
           </div>
+          <p className="text-sm lg:text-md text-slate-400">
+            *Saturday tours exclude Nomonde Creche and Auriel College, tour
+            duration 1h30 @ 10% discount.
+          </p>
         </div>
       </section>
       {/* PRICING */}
@@ -244,19 +248,15 @@ export default function CommunityTours() {
               text="September - April (Summer)"
             />
             <ul className="list-disc">
-              <li className="text-md lg:text-lg">(1) 07:30 – 09:30</li>
-              <li className="text-md lg:text-lg">(2) 10:00 – 12:00</li>
-              <li className="text-md lg:text-lg">(3) 14:00 – 16:00</li>
-              <li className="text-md lg:text-lg">(4) 16:30 – 18:30</li>
+              <li className="text-md lg:text-lg">(1) 08:00 – 10:30</li>
+              <li className="text-md lg:text-lg">(2) 11:00 – 13:00</li>
             </ul>
           </div>
           <div className="flex flex-col gap-4 lg:gap-8">
             <Heading as="h4" mode="secondary" text="May - August (Winter)" />
             <ul className="list-disc">
-              <li className="text-md lg:text-lg">(1) 08:00 – 10:00</li>
-              <li className="text-md lg:text-lg">(2) 10:30 – 12:30</li>
-              <li className="text-md lg:text-lg">(3) 13:00 – 15:00</li>
-              <li className="text-md lg:text-lg">(4) 15:30 – 17:30</li>
+              <li className="text-md lg:text-lg">(1) 09:00 – 11:30</li>
+              <li className="text-md lg:text-lg">(2) 12:00 – 14:30</li>
             </ul>
           </div>
         </div>
