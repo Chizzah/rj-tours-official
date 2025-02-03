@@ -110,16 +110,16 @@ export default function BikeToursAndRentals() {
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[1024px] mx-auto flex flex-col gap-4 lg:gap-8">
           <Heading as="h2" mode="secondary" text="Pricing" />
-          <div className="flex justify-between border-2 lg:flex-col lg:border-r-0 bg-slate-50">
+          <div className="flex justify-between overflow-x-scroll border-2 lg:flex-col lg:border-r-0 bg-slate-50 lg:overflow-x-hidden">
             {/* HEADER */}
             <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full">
-              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+              <div className="flex items-center justify-center h-20 px-2 text-center border-b-2 lg:w-4/12 lg:border-r-2 lg:text-left">
                 <p className="text-sm lg:text-lg">ADULT</p>
               </div>
-              <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:w-4/12 lg:border-r-2">
+              <div className="flex items-center justify-center h-20 px-2 text-center border-b-2 lg:w-4/12 lg:border-r-2 lg:text-left">
                 <p className="text-sm lg:text-lg">CHILD (4-12)</p>
               </div>
-              <div className="flex items-center justify-center h-20 px-2 lg:w-4/12 lg:border-b-2">
+              <div className="flex items-center justify-center h-20 px-2 text-center lg:w-4/12 lg:border-b-2 lg:text-left">
                 <p className="text-sm lg:text-lg">BIKE RENTALS</p>
               </div>
             </div>
@@ -140,36 +140,65 @@ export default function BikeToursAndRentals() {
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R249" />
+                <Heading as="h2" mode="secondary" text="R80" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  HALF DAY (4 HOURS)
+                  1 HOUR
                 </p>
               </div>
             </div>
             {/* ROW ONE */}
 
             {/* ROW TWO */}
-            <div className="flex flex-col w-1/2 lg:flex-row lg:w-full">
-              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R299" />
-                <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  3 HOUR TOUR
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R199" />
-                <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  3 HOUR TOUR
-                </p>
-              </div>
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R299" />
+                <Heading as="h2" mode="secondary" text="R130" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  FULL DAY (8 HOURS)
+                  2 HOURS
                 </p>
               </div>
             </div>
             {/* ROW TWO */}
+
+            {/* ROW THREE */}
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R180" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  3 HOURS
+                </p>
+              </div>
+            </div>
+            {/* ROW THREE */}
+
+            {/* ROW FOUR */}
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R240" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  4 HOURS
+                </p>
+              </div>
+            </div>
+            {/* ROW FOUR */}
+
+            {/* ROW FIVE */}
+            <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0">
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R290" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  8 HOURS
+                </p>
+              </div>
+            </div>
+            {/* ROW FIVE */}
           </div>
         </div>
       </section>

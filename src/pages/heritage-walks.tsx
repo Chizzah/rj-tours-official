@@ -157,7 +157,7 @@ export default function HeritageWalks() {
                 <Heading as="h3" mode="secondary" text="R170-00" />
               </div>
               <div className="flex items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h3" mode="secondary" text="110-00" />
+                <Heading as="h3" mode="secondary" text="R110-00" />
               </div>
               <div className="flex items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
                 <Heading as="h3" mode="secondary" text="10% DISCOUNT" />

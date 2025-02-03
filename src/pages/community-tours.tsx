@@ -241,7 +241,8 @@ export default function CommunityTours() {
       <section className="p-8 bg-neutral-100 text-stone-400 lg:p-0 lg:pb-16">
         <div className="max-w-[768px] lg:max-w-[864px] mx-auto flex flex-col gap-4 lg:gap-8">
           <Heading mode="secondary" as="h2" text="TIMESLOTS" />
-          <div className="flex flex-col gap-4 lg:gap-8">
+          <Heading as="h3" mode="secondary" text="Monday to Friday" />
+          <div className="flex flex-col gap-4">
             <Heading
               as="h4"
               mode="secondary"
@@ -252,11 +253,28 @@ export default function CommunityTours() {
               <li className="text-md lg:text-lg">(2) 11:00 – 13:00</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4 lg:gap-8">
+          <div className="flex flex-col gap-4">
             <Heading as="h4" mode="secondary" text="May - August (Winter)" />
             <ul className="list-disc">
               <li className="text-md lg:text-lg">(1) 09:00 – 11:30</li>
               <li className="text-md lg:text-lg">(2) 12:00 – 14:30</li>
+            </ul>
+          </div>
+          <Heading as="h3" mode="secondary" text="Saturdays" />
+          <div className="flex flex-col gap-4">
+            <Heading
+              as="h4"
+              mode="secondary"
+              text="September - April (Summer)"
+            />
+            <ul className="list-disc">
+              <li className="text-md lg:text-lg">(1) 08:00 – 09:30</li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4">
+            <Heading as="h4" mode="secondary" text="May - August (Winter)" />
+            <ul className="list-disc">
+              <li className="text-md lg:text-lg">(1) 08:30 – 10:00</li>
             </ul>
           </div>
         </div>
