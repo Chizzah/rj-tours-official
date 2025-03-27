@@ -128,13 +128,13 @@ export default function BikeToursAndRentals() {
             {/* ROW ONE */}
             <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R249" />
+                <Heading as="h2" mode="secondary" text="R210" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   2 HOUR TOUR
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
-                <Heading as="h2" mode="secondary" text="R149" />
+                <Heading as="h2" mode="secondary" text="R145" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
                   2 HOUR TOUR
                 </p>
@@ -150,8 +150,18 @@ export default function BikeToursAndRentals() {
 
             {/* ROW TWO */}
             <div className="flex flex-col w-1/2 border-r-2 lg:flex-row lg:w-full lg:border-r-0 lg:border-b-2">
-              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
-              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2"></div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R280" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  3 HOUR TOUR
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
+                <Heading as="h2" mode="secondary" text="R170" />
+                <p className="text-xs font-semibold lg:text-sm text-slate-400">
+                  3 HOUR TOUR
+                </p>
+              </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
                 <Heading as="h2" mode="secondary" text="R130" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">

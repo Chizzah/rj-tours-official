@@ -212,19 +212,19 @@ export default function CommunityTours() {
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
                 <Heading as="h2" mode="secondary" text="R330" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  PER CHILD (4-7)
+                  PER CHILD (4-12)
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 border-b-2 lg:h-40 lg:w-4/12 lg:border-b-0 lg:border-r-2">
                 <Heading as="h2" mode="secondary" text="R240" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  PER CHILD (4-7)
+                  PER CHILD (4-12)
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center h-20 px-2 lg:h-40 lg:w-4/12 lg:border-r-2">
                 <Heading as="h2" mode="secondary" text="R450" />
                 <p className="text-xs font-semibold lg:text-sm text-slate-400">
-                  PER CHILD (4-7)
+                  PER CHILD (4-12)
                 </p>
               </div>
             </div>
